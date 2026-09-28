@@ -13,4 +13,5 @@ trait-variant = "0"
 async-trait = "0"
 anyhow = "1"
 tracing = "0"
-tracing-subscriber = "0"
+tracing-subscriber = { version = "0", features = ["fmt", "time", "local-time"] }
+time = { version = "0", features = ["local-offset"] }
